@@ -4,44 +4,57 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Universal</title>
+		<link rel="stylesheet" href="css/slyle.css" />
 	</head>
 	<body>
-		<div class="section">
+		<div class="container">
 			<header class="header">
 				<div class="header-top">
 					<div class="menu">
-						<img src="img/hamburger menu.svg" alt="Icon: menu" class="image" />
+						<img src="img/hamburger menu.svg" alt="Icon: menu" class="image menu__icon" />
+						<span class="menu__label">Sections</span>
 					</div>
 					<!-- /.menu -->
 					<div class="search">
-						<img src="img/search.svg" alt="Icon: search" class="image" />
-						<input type="text" class="search__input" placeholder="Search" />
+						<!-- <img src="img/search.svg" alt="Icon: search" class="image search__icon" /> -->
+						<input type="text" class="search__input" placeholder="    Search" />
 					</div>
 					<!-- /.search -->
 					<div class="subscribe">
-						<div class="subscribe__image">
-							<img src="img/mark.png" alt="Image: mark" class="image" />
+						<div class="header-wrapper">
+							<div class="subscribe__mark"><img src="img/mark.png" alt="Image: mark" class="image subscribe__image" /></div>
+							<!-- /.subscribe__mark -->
+
+							<!-- /.subscribe__image -->
+							<div class="subscribe__text">
+								<div class="subscribe__title">Subscribe Now</div>
+								<div class="subscribe__price">3 month for $19</div>
+							</div>
+							<!-- /.subscribe__text -->
+							<div class="subscribe__authorization">
+								<img src="img/man.svg" alt="Icon: Man" class="subscribe__icon" class="image" />
+								<span class="subscribe__signIn">Sign In</span>
+							</div>
+							<!-- /.subscribe__authorization -->
 						</div>
-						<!-- /.subscribe__image -->
-						<div class="subscribe__text">
-							<div class="subscribe__title">Subscribe Now</div>
-							<div class="subscribe__price">3 month for $19</div>
-						</div>
-						<!-- /.subscribe__text -->
-						<div class="subscribe__authorization">
-							<img src="img/man.svg" alt="Icon: Man" class="subscribe__icon" class="image" />
-							<span class="subscribe__signIn">Sign In</span>
-						</div>
-						<!-- /.subscribe__authorization -->
+						<!-- /.header-wrapper -->
 					</div>
 					<!-- /.subscribe -->
 				</div>
 				<!-- /.wrapper-top -->
 				<div class="header-bottom">
-					<img src="img/statue-of-liberty.png" alt="Image: Statue of liberty" class="image subscribe__liberty-statue" />
-					<span class="subscribe__label">Boston and New York Bear Brunt</span>
-					<img src="img/universal.svg" alt="Image: Logo" class="subscribe__logo" />
-					<span class="subscribe__date">Monday, January 1, 2018</span>
+					<img src="img/statue-of-liberty.png" alt="Image: Statue of liberty" class="image header__liberty-statue" />
+					<span class="header__label">Boston and New York Bear Brunt</span>
+					<img src="img/universal.svg" alt="Image: Logo" class="header__logo" />
+
+					<div class="header-wrapper">
+						<span class="header__date">Monday, January 1, 2018</span>
+						<div class="header__weather">
+							<img src="img/sun.svg" alt="Icon: sun" class="image header__icon" />
+							<span class="header__temperature">- 23 °C</span>
+						</div>
+						<!-- /.header-wrapper -->
+					</div>
 				</div>
 				<!-- /.wrapper-bottom -->
 			</header>
