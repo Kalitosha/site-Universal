@@ -18,7 +18,55 @@ body
   
 .wrapper_dark
   background-color: $dark
-  height: 475px
+  position: absolute;
+  top: 189px;
+  height: 475px;
+  width: 100%;
+  z-index: -1;
+
+.wrapper_gray
+  background-color: #E5E5E5
+  position: absolute;
+  top: 664px;
+  height: 1145px;
+  width: 100%;
+  z-index: -1;
+
+.comment
+  display: flex
+  align-items: center
+  justify-content: space-between
+  &__icon
+    width: 13.5px
+    height: 13.5px
+    margin-right: 5.75px
+  &__quantity
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: $plhol
+
+.like
+  display: flex
+  align-items: center
+  justify-content: space-between
+  &__icon
+    // width: 13.5px
+    // height: 13.5px
+    margin-right: 6.12px
+  &__quantity
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 15px;
+    color: $plhol
+
+.line
+  width: 100%
+  height: 1px
+  background-color: #D9DADB
+  z-index: 10
 
 // .input
 //   background: #FFFFFF
@@ -41,20 +89,20 @@ body
 //     color: $gray
 //     font-size: 12px
 
-// .button
-//   min-width: 160px
-//   min-height: 50px
-//   padding: 18px
-//   font-style: normal
-//   font-weight: bold
-//   font-size: 12px
-//   line-height: 15px
-//   color: $light
-//   background-color: $primary
-//   border: none
-//   border-radius: 4px
-//   cursor: pointer
-//   outline: none
+.button
+  // min-width: 160px
+  // min-height: 50px
+  // padding: 18px
+  // font-style: normal
+  // font-weight: bold
+  // font-size: 12px
+  // line-height: 15px
+  // color: $light
+  // background-color: $primary
+  border: none
+  // border-radius: 4px
+  cursor: pointer
+  outline: none
 
 // .form
 //   display: flex

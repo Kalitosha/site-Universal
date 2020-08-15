@@ -9,9 +9,15 @@
 		&__date
 			margin-right: 34px
 
+	.top-news
+		&__item
+			padding: 0 10px
+		&__image
+			margin-left: 10px
+
 	.grid
 		&-cards
-			margin-top: 330px
+			margin-top: 20px
 			grid-template-columns: repeat(3, 1fr)
 			grid-template-rows: repeat(6, 1fr)
 			grid-column-gap: 20px
@@ -93,10 +99,13 @@
 		&__item
 			width: 50%
 			padding: 0 5%;
+			margin: 10px 0 10px 0;
+		&__text
+			max-width: inherit
 
 	.grid
 		&-cards
-			margin-top: 410px;
+			margin-top: 15px;
 
 @media (max-width: 768px)
 	
@@ -136,8 +145,6 @@
 
 	.grid
 		&-cards
-			margin-top: 59%
-			padding-top: 20px
 			grid-template-columns: repeat(2, 1fr)
 			grid-template-rows: repeat(8, 1fr)
 			grid-column-gap: 15px
@@ -170,17 +177,17 @@
 					height: 100%
 					width: 100%
 				&_6
-					grid-row: 7
+					grid-row: 9
 					grid-column: 1
 					height: 100%
 					width: 100%
 				&_7
-					grid-row: 8
+					grid-row: 10
 					grid-column: 1
 					height: 100%
 					width: 100%
 				&_8
-					grid-row: 3/9
+					grid-row: 3/11
 					grid-column: 2
 					height: 100%
 					width: 100%
@@ -204,7 +211,7 @@
 		flex-wrap: wrap;
 		justify-content: center;		
 		&__item
-			width: 100%
+			width: 75% //100%
 			padding: 0 2%;
 			margin: 6px 0
 			border: none
@@ -217,7 +224,6 @@
 
 	.grid
 		&-cards
-			margin-top: 275px;
 			grid-template-columns: repeat(2, 1fr)
 			grid-template-rows: repeat(10, 1fr)
 			grid-column-gap: 15px
@@ -250,17 +256,17 @@
 					height: 100%
 					width: 100%
 				&_6
-					grid-row: 7
+					grid-row: 9
 					grid-column: 1/3
 					height: 100%
 					width: 100%
 				&_7
-					grid-row: 8
+					grid-row: 10
 					grid-column: 1/3
 					height: 100%
 					width: 100%
 				&_8
-					grid-row: 9/11
+					grid-row: 11/12
 					grid-column: 1/3
 					height: 100%
 					width: 100%
@@ -286,7 +292,7 @@
 	
 	.grid
 		&-cards
-			margin-top: 400px;
+			// margin-top: 400px;
 
 @media (max-height: 586px)
 	// .navbar
