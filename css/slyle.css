@@ -129,6 +129,10 @@ body {
   z-index: 10;
 }
 
+.line_blue {
+  background-color: #B4D1E0;
+}
+
 .button {
   border: none;
   cursor: pointer;
@@ -869,8 +873,7 @@ template {
 }
 
 .grid-cards__item {
-  width: 263px;
-  height: 170px;
+  background-color: #FFFFFF;
 }
 
 .grid-cards__item_1 {
@@ -880,7 +883,6 @@ template {
   -ms-grid-column: 1;
   -ms-grid-column-span: 2;
   grid-column: 1/3;
-  background-color: #c78888;
   width: 555px;
   height: 370px;
   padding: 25px 25px 13px 25px;
@@ -892,7 +894,6 @@ template {
   grid-row: 1/3;
   -ms-grid-column: 3;
   grid-column: 3;
-  background-color: #e98686;
   width: 263px;
   height: 370px;
   padding: 25px 25px 30px 25px;
@@ -904,7 +905,6 @@ template {
   grid-row: 3/5;
   -ms-grid-column: 1;
   grid-column: 1;
-  background-color: #888cc7;
   width: 263px;
   height: 370px;
   padding: 0;
@@ -915,10 +915,10 @@ template {
   grid-row: 3;
   -ms-grid-column: 2;
   grid-column: 2;
-  background-color: #aaaccc;
-  width: 263px;
-  height: 170px;
   padding: 25px 25px 30px 25px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
 }
 
 .grid-cards__item_5 {
@@ -926,9 +926,6 @@ template {
   grid-row: 4;
   -ms-grid-column: 2;
   grid-column: 2;
-  background-color: #c1aacc;
-  width: 263px;
-  height: 170px;
   padding: 25px 25px 30px 25px;
 }
 
@@ -937,9 +934,6 @@ template {
   grid-row: 3;
   -ms-grid-column: 3;
   grid-column: 3;
-  background-color: #ab82be;
-  width: 263px;
-  height: 170px;
   padding: 25px 25px 30px 25px;
 }
 
@@ -948,9 +942,6 @@ template {
   grid-row: 4;
   -ms-grid-column: 3;
   grid-column: 3;
-  background-color: #be82af;
-  width: 263px;
-  height: 170px;
   padding: 25px 25px 30px 25px;
 }
 
@@ -960,9 +951,13 @@ template {
   grid-row: 1/5;
   -ms-grid-column: 4;
   grid-column: 4;
-  background-color: #82beac;
+  background-color: #6E99AE;
   width: 263px;
   height: 770px;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 .grid-card {
@@ -972,9 +967,11 @@ template {
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   z-index: 1;
   color: #4B5157;
-  background-color: #FFFFFF;
   border-radius: 10px;
 }
 
@@ -1011,6 +1008,13 @@ template {
   color: #E7D9FF;
 }
 
+.grid-card__rubric_columns {
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 20px;
+  margin: 20px 25px;
+}
+
 .grid-card__title {
   margin: 0px 0 25px 0;
   font-family: Roboto Slab;
@@ -1042,6 +1046,13 @@ template {
   margin: 0 0 5px 0;
 }
 
+.grid-card__title_medium {
+  font-size: 20px;
+  line-height: 25px;
+  color: #FFFFFF;
+  margin: 10px 10px 15px 10px;
+}
+
 .grid-card__text {
   margin: 0;
   font-weight: normal;
@@ -1065,6 +1076,8 @@ template {
   bottom: 0;
   left: 0;
   border-radius: 10px;
+  width: 100%;
+  height: 100%;
   z-index: -2;
 }
 
@@ -1131,6 +1144,14 @@ template {
   width: 100%;
 }
 
+.grid-card__name_blue {
+  font-weight: normal;
+  color: #D1E2EB;
+  mix-blend-mode: normal;
+  opacity: 0.85;
+  width: 100%;
+}
+
 .grid-card__comment {
   font-weight: normal;
   font-size: 14px;
@@ -1182,6 +1203,40 @@ template {
   margin-top: 10px;
 }
 
+.grid-card__card {
+  position: relative;
+  margin: 0 25px;
+  border-bottom: 1px solid #B4D1E0;
+  padding: 35px 0 39px 0;
+}
+
+.grid-card__card:nth-last-child(1) {
+  border: none;
+}
+
+.grid-card__quote {
+  position: absolute;
+  top: 35px;
+  left: 0px;
+  z-index: -1;
+}
+
+.grid-card__profession {
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 15px;
+  color: #D1E2EB;
+}
+
+.grid-card__button {
+  width: 100%;
+  padding: 11px 25px 14px 25px;
+  background-color: #6E99AE;
+  font-size: 14px;
+  line-height: 20px;
+  color: #FFFFFF;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 972px;
@@ -1200,6 +1255,9 @@ template {
   }
   .top-news__image {
     margin-left: 10px;
+  }
+  .wrapper_gray {
+    height: 1660px;
   }
   .grid-cards {
     margin-top: 20px;
@@ -1237,15 +1295,16 @@ template {
     grid-column: 2;
     height: 100%;
     width: 100%;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
   }
   .grid-cards__item_4 {
     -ms-grid-row: 5;
     grid-row: 5;
     -ms-grid-column: 1;
     grid-column: 1;
-    height: 170px;
     width: 100%;
-    min-width: 337px;
   }
   .grid-cards__item_5 {
     -ms-grid-row: 6;
@@ -1375,6 +1434,9 @@ template {
   .subscribe__signIn {
     display: none;
   }
+  .wrapper_gray {
+    height: 2440px;
+  }
   .grid-cards {
     -ms-grid-columns: (1fr)[2];
         grid-template-columns: repeat(2, 1fr);
@@ -1416,9 +1478,7 @@ template {
     grid-row: 7;
     -ms-grid-column: 1;
     grid-column: 1;
-    height: 170px;
     width: 100%;
-    min-width: 337px;
   }
   .grid-cards__item_5 {
     -ms-grid-row: 8;
@@ -1457,19 +1517,27 @@ template {
 
 @media (max-width: 586px) {
   .header-bottom {
-    height: 54px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .header-wrapper_top {
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    min-width: 30px;
+  }
+  .header-wrapper_bottom {
+    display: none;
   }
   .header__liberty-statue {
-    width: 60px;
-    height: 44px;
-    margin: 0;
+    display: none;
   }
   .header__label {
-    line-height: 12px;
-    font-size: 10px;
+    display: none;
   }
-  .header__logo {
-    margin: 0px 3%;
+  .subscribe__mark, .subscribe__text {
+    display: none;
   }
   .top-news {
     -ms-flex-wrap: wrap;
@@ -1491,6 +1559,9 @@ template {
     width: 50px;
     height: 50px;
     margin-left: 10px;
+  }
+  .wrapper_gray {
+    height: 4080px;
   }
   .grid-cards {
     -ms-grid-columns: (1fr)[2];
@@ -1536,9 +1607,7 @@ template {
     -ms-grid-column: 1;
     -ms-grid-column-span: 2;
     grid-column: 1/3;
-    height: 170px;
     width: 100%;
-    min-width: 337px;
   }
   .grid-cards__item_5 {
     -ms-grid-row: 8;
@@ -1576,32 +1645,6 @@ template {
     grid-column: 1/3;
     height: 100%;
     width: 100%;
-  }
-}
-
-@media (max-width: 500px) {
-  .header-bottom {
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  .header-wrapper_top {
-    -webkit-box-pack: end;
-        -ms-flex-pack: end;
-            justify-content: flex-end;
-    min-width: 30px;
-  }
-  .header-wrapper_bottom {
-    display: none;
-  }
-  .header__liberty-statue {
-    display: none;
-  }
-  .header__label {
-    display: none;
-  }
-  .subscribe__mark, .subscribe__text {
-    display: none;
   }
 }
 /*# sourceMappingURL=slyle.css.map */

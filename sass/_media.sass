@@ -15,6 +15,9 @@
 		&__image
 			margin-left: 10px
 
+	.wrapper_gray
+		height: 1660px
+
 	.grid
 		&-cards
 			margin-top: 20px
@@ -23,6 +26,7 @@
 			grid-column-gap: 20px
 			grid-row-gap: 20px
 			&__item
+				// align-items: center
 				&_1
 					grid-row: 1/3
 					grid-column: 1/3
@@ -38,12 +42,13 @@
 					grid-column: 2
 					height: 100%
 					width: 100%
+					align-items: flex-start;
 				&_4
 					grid-row: 5
 					grid-column: 1
-					height: 170px
+					// height: 170px
 					width: 100%
-					min-width: 337px
+					// min-width: 337px
 				&_5
 					grid-row: 6
 					grid-column: 1
@@ -143,6 +148,9 @@
 		&__signIn
 			display: none
 
+	.wrapper_gray
+		height: 2440px
+
 	.grid
 		&-cards
 			grid-template-columns: repeat(2, 1fr)
@@ -168,9 +176,9 @@
 				&_4
 					grid-row: 7
 					grid-column: 1
-					height: 170px
+					// height: 170px
 					width: 100%
-					min-width: 337px
+					// min-width: 337px
 				&_5
 					grid-row: 8
 					grid-column: 1
@@ -195,17 +203,22 @@
 @media (max-width: 586px)
 	.header
 		&-bottom
-			height: 54px
+			justify-content: center
 		&-wrapper
+			&_top
+				justify-content: flex-end
+				min-width: 30px
+			&_bottom
+				display: none
 		&__liberty-statue
-			width: 60px
-			height: 44px
-			margin: 0
+			display: none
 		&__label
-			line-height: 12px
-			font-size: 10px
-		&__logo
-			margin: 0px 3%
+			display: none
+
+	.subscribe
+		&__mark, &__text
+			display: none
+
 
 	.top-news
 		flex-wrap: wrap;
@@ -221,6 +234,9 @@
 			width: 50px;
 			height: 50px;
 			margin-left: 10px
+
+	.wrapper_gray 
+		height: 4080px;
 
 	.grid
 		&-cards
@@ -247,9 +263,9 @@
 				&_4
 					grid-row: 7
 					grid-column: 1/3
-					height: 170px
+					// height: 170px
 					width: 100%
-					min-width: 337px
+					// min-width: 337px
 				&_5
 					grid-row: 8
 					grid-column: 1/3
@@ -272,23 +288,23 @@
 					width: 100%
 
 @media (max-width: 500px)
-	.header
-		&-bottom
-			justify-content: center
-		&-wrapper
-			&_top
-				justify-content: flex-end
-				min-width: 30px
-			&_bottom
-				display: none
-		&__liberty-statue
-			display: none
-		&__label
-			display: none
+	// .header
+	// 	&-bottom
+	// 		justify-content: center
+	// 	&-wrapper
+	// 		&_top
+	// 			justify-content: flex-end
+	// 			min-width: 30px
+	// 		&_bottom
+	// 			display: none
+	// 	&__liberty-statue
+	// 		display: none
+	// 	&__label
+	// 		display: none
 
-	.subscribe
-		&__mark, &__text
-			display: none
+	// .subscribe
+	// 	&__mark, &__text
+	// 		display: none
 	
 	.grid
 		&-cards
