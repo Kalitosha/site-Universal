@@ -1,0 +1,127 @@
+.posts	
+	max-width: 848px
+	background: $light
+	border-radius: 10px
+	// background-color: #d6b8b8
+	&-wrapper
+		display: flex
+		justify-content: space-between
+		margin-top: 60px
+	&__item
+		display: flex
+		padding: 25px
+		border-bottom: 1px solid #D9DADB
+		&:nth-last-child(1)
+			border: none
+	&__image
+		width: 336px
+		height: 195px
+	&__content
+		position: relative
+		display: flex
+		// align-items: center
+		justify-content: center
+		flex-direction: column
+		margin-left: 25px
+	&__rubric
+		font-size: 12px
+		line-height: 15px
+		letter-spacing: 0.5px
+		text-transform: uppercase
+		margin-top: 5px
+		&_blue
+			color: $btn-blue
+		&_tomato
+			color: #FF4F52
+		&_green
+			color: #3BBDC4
+		&_purple
+			color: #AC8EE3
+	&__bookmark
+		position: absolute
+		// top: 26px
+		// right: 28px
+		top: 1px
+		right: 3px
+	&__title
+		font-family: Roboto Slab
+		font-style: normal
+		font-weight: bold
+		font-size: 20px
+		line-height: 25px
+		color: $dark
+		margin-top: 15px
+		margin-bottom: 10px
+	&__text
+		font-weight: normal
+		font-size: 14px
+		line-height: 20px
+		color: $dark
+		margin-bottom: 20px
+		margin-top: 0
+	&__info
+		display: flex
+		justify-content: space-between;
+		width: 125px;
+	&__date
+		font-weight: normal
+		font-size: 12px
+		line-height: 15px
+		color: $plhol
+		// margin-right: 10.75px
+
+.recommends
+	display: flex
+	flex-direction: column
+	background-color: $light
+	border-radius: 10px
+	margin-left: 29px
+	height: fit-content
+	&__rubric
+		font-size: 14px
+		line-height: 20px
+		letter-spacing: 0.5px
+		text-transform: uppercase
+		color: $dark
+		margin: 20px 25px
+		font-weight: bold
+	&__card
+		position: relative
+		display: flex
+		padding: 17px 0
+		margin: 0 25px
+		border-bottom: 1px solid #D9DADB
+		&:nth-last-child(1)
+			border: none
+	&__image
+		width: 60px
+		height: 60px
+	&-wraper
+		display: flex
+		flex-direction: column
+		margin-left: 10px
+	&__title
+		font-weight: normal
+		font-size: 14px
+		line-height: 20px
+		margin: 0
+		color: $text-color		
+		margin-bottom: 5px
+	&__time
+		font-weight: normal
+		font-size: 12px
+		line-height: 15px
+		color: $plhol
+	&__number
+		position: absolute
+		top: 20px
+		right: 25px
+	&__button
+		width: 100%
+		padding: 11px 25px 14px 25px
+		background-color: $light
+		font-size: 14px
+		line-height: 20px
+		color: $dark
+		border-bottom-left-radius: 10px
+		border-bottom-right-radius: 10px
