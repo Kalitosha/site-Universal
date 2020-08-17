@@ -15,24 +15,25 @@ body
 .image 
   max-width: 100%
   object-fit: cover
-  
-.wrapper_dark
-  background-color: $dark
-  position: absolute
-  top: 189px
-  height: 475px
-  width: 100%
-  z-index: -1
 
-.wrapper_gray
-  background-color: #E5E5E5
-  position: absolute
-  top: 664px
-  height: 1145px
-  width: 100%
-  z-index: -1
-  &_2
+.wrapper
+  &_dark
+    background-color: $dark    
+    width: 100%    
+    &_a
+      position: absolute
+      top: 189px
+      height: 475px
+      z-index: -1
+  &_gray
+    background-color: #E5E5E5
+    width: 100%
+    z-index: -10
+    padding: 60px 0
     
+  // position: absolute
+  // top: 664px
+  // height: 1145px
 
 .comment
   display: flex
@@ -109,6 +110,10 @@ body
   outline: none
 
 .link
+  display: flex
+  align-items: center
+  width: fit-content
+  justify-content: space-between
   padding: 10px 23px
   font-size: 14px
   line-height: 20px
@@ -119,9 +124,14 @@ body
   text-decoration: none
   cursor: pointer
   &__text
+    margin: 0 5px
   &__icon
-    width: 15px
-    height: 7px
+    // width: 15px
+    // height: 7px
+  &__number
+    font-size: 14px;
+    line-height: 20px;
+    color: #C5E4FC
   &:hover      
     box-shadow: 0 0 20px 0px #ffffff47
 

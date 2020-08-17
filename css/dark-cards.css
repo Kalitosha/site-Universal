@@ -1,0 +1,47 @@
+.dark-cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dark-cards-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  background-color: #fff;
+}
+
+.dark-cards__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 50%;
+}
+
+.dark-cards__card_big {
+  position: relative;
+  width: 100%;
+}
+
+.dark-cards-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.dark-cards__image {
+  position: absolute;
+  top: 18px;
+  right: 30px;
+}
+
+.slider {
+  width: 50%;
+}
+/*# sourceMappingURL=dark-cards.css.map */
